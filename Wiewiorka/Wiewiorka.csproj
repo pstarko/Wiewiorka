@@ -46,6 +46,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Model\Connect.cs" />
+    <Compile Include="Model\Magazyn.cs" />
+    <Compile Include="Model\Sklep.cs" />
     <Compile Include="View\Main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -118,7 +121,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controller\" />
-    <Folder Include="Model\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\wiewiórka.jpg" />
