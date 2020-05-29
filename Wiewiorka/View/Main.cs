@@ -35,5 +35,11 @@ namespace Wiewiorka
             Produkty p = new Produkty();
             p.Show();
         }
+
+        private void przyjęcieToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Przyjecie p = new Przyjecie();
+            p.Show();
+        }
     }
 }

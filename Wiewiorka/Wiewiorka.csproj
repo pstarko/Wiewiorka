@@ -66,6 +66,12 @@
     <Compile Include="View\Produkty.Designer.cs">
       <DependentUpon>Produkty.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\Przyjecie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Przyjecie.Designer.cs">
+      <DependentUpon>Przyjecie.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\Sklep.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -90,6 +96,9 @@
     </Compile>
     <EmbeddedResource Include="View\Produkty.resx">
       <DependentUpon>Produkty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Przyjecie.resx">
+      <DependentUpon>Przyjecie.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\Sklep.resx">
       <DependentUpon>Sklep.cs</DependentUpon>

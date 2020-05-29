@@ -61,12 +61,29 @@
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.button2 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
+            this.button3 = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.przyjęcieToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            this.tabPage2.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -77,7 +94,7 @@
             this.tabControl1.Location = new System.Drawing.Point(2, 40);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(795, 398);
+            this.tabControl1.Size = new System.Drawing.Size(659, 398);
             this.tabControl1.TabIndex = 0;
             // 
             // tabPage1
@@ -88,13 +105,15 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(787, 372);
+            this.tabPage1.Size = new System.Drawing.Size(651, 372);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Sklep";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.dataGridView1);
+            this.tabPage2.Controls.Add(this.groupBox3);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
@@ -116,7 +135,7 @@
             // cbWybierzSklep
             // 
             this.cbWybierzSklep.FormattingEnabled = true;
-            this.cbWybierzSklep.Location = new System.Drawing.Point(667, 13);
+            this.cbWybierzSklep.Location = new System.Drawing.Point(536, 13);
             this.cbWybierzSklep.Name = "cbWybierzSklep";
             this.cbWybierzSklep.Size = new System.Drawing.Size(121, 21);
             this.cbWybierzSklep.TabIndex = 1;
@@ -124,7 +143,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(577, 16);
+            this.label1.Location = new System.Drawing.Point(446, 16);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(73, 13);
             this.label1.TabIndex = 2;
@@ -136,14 +155,15 @@
             this.plikToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(672, 24);
             this.menuStrip1.TabIndex = 3;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // plikToolStripMenuItem
             // 
             this.plikToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.ustawieniaToolStripMenuItem});
+            this.ustawieniaToolStripMenuItem,
+            this.przyjęcieToolStripMenuItem});
             this.plikToolStripMenuItem.Name = "plikToolStripMenuItem";
             this.plikToolStripMenuItem.Size = new System.Drawing.Size(38, 20);
             this.plikToolStripMenuItem.Text = "Plik";
@@ -374,11 +394,136 @@
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.button3);
+            this.groupBox3.Controls.Add(this.dateTimePicker3);
+            this.groupBox3.Controls.Add(this.label14);
+            this.groupBox3.Controls.Add(this.textBox10);
+            this.groupBox3.Controls.Add(this.label13);
+            this.groupBox3.Controls.Add(this.label12);
+            this.groupBox3.Controls.Add(this.textBox8);
+            this.groupBox3.Controls.Add(this.label11);
+            this.groupBox3.Controls.Add(this.textBox7);
+            this.groupBox3.Controls.Add(this.label10);
+            this.groupBox3.Controls.Add(this.textBox6);
+            this.groupBox3.Location = new System.Drawing.Point(6, 21);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(345, 345);
+            this.groupBox3.TabIndex = 0;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Dodaj pracownika";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(17, 44);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(26, 13);
+            this.label10.TabIndex = 15;
+            this.label10.Text = "Imię";
+            // 
+            // textBox6
+            // 
+            this.textBox6.Location = new System.Drawing.Point(155, 38);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(100, 20);
+            this.textBox6.TabIndex = 14;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(17, 82);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(53, 13);
+            this.label11.TabIndex = 17;
+            this.label11.Text = "Nazwisko";
+            // 
+            // textBox7
+            // 
+            this.textBox7.Location = new System.Drawing.Point(155, 76);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(100, 20);
+            this.textBox7.TabIndex = 16;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(17, 122);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(26, 13);
+            this.label12.TabIndex = 19;
+            this.label12.Text = "Etat";
+            // 
+            // textBox8
+            // 
+            this.textBox8.Location = new System.Drawing.Point(155, 116);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(100, 20);
+            this.textBox8.TabIndex = 18;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(17, 168);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(129, 13);
+            this.label13.TabIndex = 21;
+            this.label13.Text = "Data zakończenia umowy";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(17, 207);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(48, 13);
+            this.label14.TabIndex = 23;
+            this.label14.Text = "Dodatek";
+            // 
+            // textBox10
+            // 
+            this.textBox10.Location = new System.Drawing.Point(155, 201);
+            this.textBox10.Name = "textBox10";
+            this.textBox10.Size = new System.Drawing.Size(100, 20);
+            this.textBox10.TabIndex = 22;
+            // 
+            // dateTimePicker3
+            // 
+            this.dateTimePicker3.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker3.Location = new System.Drawing.Point(155, 161);
+            this.dateTimePicker3.Name = "dateTimePicker3";
+            this.dateTimePicker3.Size = new System.Drawing.Size(100, 20);
+            this.dateTimePicker3.TabIndex = 24;
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(21, 246);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(234, 43);
+            this.button3.TabIndex = 25;
+            this.button3.Text = "Dodaj pracownika";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(396, 21);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(385, 181);
+            this.dataGridView1.TabIndex = 1;
+            // 
+            // przyjęcieToolStripMenuItem
+            // 
+            this.przyjęcieToolStripMenuItem.Name = "przyjęcieToolStripMenuItem";
+            this.przyjęcieToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.przyjęcieToolStripMenuItem.Text = "Przyjęcie";
+            this.przyjęcieToolStripMenuItem.Click += new System.EventHandler(this.przyjęcieToolStripMenuItem_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(672, 450);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cbWybierzSklep);
             this.Controls.Add(this.tabControl1);
@@ -389,6 +534,7 @@
             this.Text = "Wiewiórka Shop";
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
+            this.tabPage2.ResumeLayout(false);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
@@ -396,6 +542,9 @@
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -436,6 +585,20 @@
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.DateTimePicker dateTimePicker3;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.ToolStripMenuItem przyjęcieToolStripMenuItem;
     }
 }
 
