@@ -41,16 +41,16 @@
             this.magazynToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.produktyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.tbProdukt = new System.Windows.Forms.TextBox();
+            this.tbIlosc = new System.Windows.Forms.TextBox();
+            this.tbCenaJednostkowa = new System.Windows.Forms.TextBox();
             this.dtSprzedaz = new System.Windows.Forms.DateTimePicker();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cbPracownik = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -203,16 +203,16 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.button1);
-            this.groupBox1.Controls.Add(this.comboBox1);
+            this.groupBox1.Controls.Add(this.cbPracownik);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.dtSprzedaz);
-            this.groupBox1.Controls.Add(this.textBox3);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.tbCenaJednostkowa);
+            this.groupBox1.Controls.Add(this.tbIlosc);
+            this.groupBox1.Controls.Add(this.tbProdukt);
             this.groupBox1.Location = new System.Drawing.Point(6, 29);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(316, 337);
@@ -220,26 +220,26 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Sprzedaż";
             // 
-            // textBox1
+            // tbProdukt
             // 
-            this.textBox1.Location = new System.Drawing.Point(166, 48);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 0;
+            this.tbProdukt.Location = new System.Drawing.Point(166, 48);
+            this.tbProdukt.Name = "tbProdukt";
+            this.tbProdukt.Size = new System.Drawing.Size(100, 20);
+            this.tbProdukt.TabIndex = 0;
             // 
-            // textBox2
+            // tbIlosc
             // 
-            this.textBox2.Location = new System.Drawing.Point(166, 93);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 1;
+            this.tbIlosc.Location = new System.Drawing.Point(166, 93);
+            this.tbIlosc.Name = "tbIlosc";
+            this.tbIlosc.Size = new System.Drawing.Size(100, 20);
+            this.tbIlosc.TabIndex = 1;
             // 
-            // textBox3
+            // tbCenaJednostkowa
             // 
-            this.textBox3.Location = new System.Drawing.Point(166, 133);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 2;
+            this.tbCenaJednostkowa.Location = new System.Drawing.Point(166, 133);
+            this.tbCenaJednostkowa.Name = "tbCenaJednostkowa";
+            this.tbCenaJednostkowa.Size = new System.Drawing.Size(100, 20);
+            this.tbCenaJednostkowa.TabIndex = 2;
             // 
             // dtSprzedaz
             // 
@@ -294,13 +294,13 @@
             this.label6.TabIndex = 9;
             this.label6.Text = "Pracownik";
             // 
-            // comboBox1
+            // cbPracownik
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(166, 222);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(99, 21);
-            this.comboBox1.TabIndex = 10;
+            this.cbPracownik.FormattingEnabled = true;
+            this.cbPracownik.Location = new System.Drawing.Point(166, 222);
+            this.cbPracownik.Name = "cbPracownik";
+            this.cbPracownik.Size = new System.Drawing.Size(99, 21);
+            this.cbPracownik.TabIndex = 10;
             // 
             // button1
             // 
@@ -578,16 +578,16 @@
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cbPracownik;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DateTimePicker dtSprzedaz;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tbCenaJednostkowa;
+        private System.Windows.Forms.TextBox tbIlosc;
+        private System.Windows.Forms.TextBox tbProdukt;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Button button3;

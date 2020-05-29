@@ -8,7 +8,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Wiewiorka.Controller;
+using Wiewiorka.Model;
 using Wiewiorka.View;
+using Magazyn = Wiewiorka.View.Magazyn;
+using Sklep = Wiewiorka.View.Sklep;
 
 namespace Wiewiorka
 {
@@ -58,10 +61,13 @@ namespace Wiewiorka
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //MessageBox.Show(dtSprzedaz.Text);
+            //MessageBox.Show(dtSprzedaz.Value.Date.ToString("yyy-MM-dd"));
             DataFromDatabase dt = new DataFromDatabase();
-            int id = dt.SklepAktualny(cbWybierzSklep);
-            MessageBox.Show(id.ToString());
+            int idAktualnegoSklepu = dt.SklepAktualny(cbWybierzSklep);
+
+            SprzedazController sc = new SprzedazController();
+            Sprzedaz NowaSprzedaz = sc.GetDataFromForm(tbProdukt, tbIlosc, tbCenaJednostkowa, dtSprzedaz, cbPracownik);
+            sc.DodajSprzedaz(NowaSprzedaz, idAktualnegoSklepu);
         }
 
         private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)

@@ -7,7 +7,7 @@ namespace Wiewiorka.Model
         public int productId { get; set; }
         public int ilosc { get; set; }
         public double cena { get; set; }
-        public DateTime data { get; set; }
+        public string data { get; set; }
         public int pracownikId { get; set; }
         public int sklepId { get; set; }
 

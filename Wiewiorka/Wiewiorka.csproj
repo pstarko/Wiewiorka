@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="Controller\DataFromDatabase.cs" />
     <Compile Include="Controller\SklepyController.cs" />
+    <Compile Include="Controller\SprzedazController.cs" />
     <Compile Include="Model\Connect.cs" />
     <Compile Include="Model\Magazyn.cs" />
     <Compile Include="Model\Sklep.cs" />
