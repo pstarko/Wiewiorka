@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Wiewiorka
+namespace Wiewiorka.View
 {
-    public partial class Form1 : Form
+    public partial class Sklep : Form
     {
-        public Form1()
+        public Sklep()
         {
             InitializeComponent();
         }
