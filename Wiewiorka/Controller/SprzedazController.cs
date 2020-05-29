@@ -15,10 +15,10 @@ namespace Wiewiorka.Controller
             Sprzedaz nowaSprzedaz = new Sprzedaz
             {
                 productId = Convert.ToInt32(_tbprodukt.Text),
-                ilosc = Convert.ToInt32(_tbIlosc),
+                ilosc = Convert.ToInt32(_tbIlosc.Text),
                 cena = Double.Parse(_cenaJednostkowa.Text),
                 data = _dtSprzedaz.Value.Date.ToString("yyy-MM-dd"),
-                pracownikId = Convert.ToInt32(_cbpracownik)
+                pracownikId = Convert.ToInt32(_cbpracownik.Text)
             };
             return nowaSprzedaz;
         }
