@@ -46,9 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controller\DataFromDatabase.cs" />
+    <Compile Include="Controller\SklepyController.cs" />
     <Compile Include="Model\Connect.cs" />
     <Compile Include="Model\Magazyn.cs" />
     <Compile Include="Model\Sklep.cs" />
+    <Compile Include="Model\Sprzedaz.cs" />
     <Compile Include="View\Main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -119,9 +122,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Controller\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="Resources\wiewiórka.jpg" />
   </ItemGroup>

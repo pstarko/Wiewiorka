@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Wiewiorka.Controller;
 using Wiewiorka.View;
 
 namespace Wiewiorka
@@ -40,6 +41,32 @@ namespace Wiewiorka
         {
             Przyjecie p = new Przyjecie();
             p.Show();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            DataFromDatabase df = new DataFromDatabase();
+
+            foreach (var item in df.Sklepy())
+            {
+                cbWybierzSklep.Items.Add(item);
+            }
+
+
+            
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            //MessageBox.Show(dtSprzedaz.Text);
+            DataFromDatabase dt = new DataFromDatabase();
+            int id = dt.SklepAktualny(cbWybierzSklep);
+            MessageBox.Show(id.ToString());
+        }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
         }
     }
 }
