@@ -29,5 +29,11 @@ namespace Wiewiorka
             Magazyn m = new Magazyn();
             m.Show();
         }
+
+        private void produktyToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Produkty p = new Produkty();
+            p.Show();
+        }
     }
 }

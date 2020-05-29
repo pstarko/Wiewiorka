@@ -60,6 +60,12 @@
     <Compile Include="View\Magazyn.Designer.cs">
       <DependentUpon>Magazyn.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\Produkty.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Produkty.Designer.cs">
+      <DependentUpon>Produkty.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\Sklep.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,7 +86,11 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="View\Produkty.resx">
+      <DependentUpon>Produkty.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\Sklep.resx">
       <DependentUpon>Sklep.cs</DependentUpon>
     </EmbeddedResource>
@@ -100,6 +110,9 @@
   <ItemGroup>
     <Folder Include="Controller\" />
     <Folder Include="Model\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wiewiórka.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
